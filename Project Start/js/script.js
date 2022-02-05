@@ -162,6 +162,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         render() {
             const element = document.createElement("div");
+            element.classList.add("menu__item");
             // if (this.classes.length === 0) {
             //     this.classes = "menu__item";
             //     element.classList.add(this.classes);
@@ -169,7 +170,7 @@ window.addEventListener("DOMContentLoaded", () => {
             //     this.classes.forEach((className) => element.classList.add(className));
             // }
             element.innerHTML = `
-                <div class="menu__item">
+                
                     <img src=${this.src} alt=${this.alt} />
                     <h3 class="menu__item-subtitle">${this.title}</h3>
                     <div class="menu__item-descr">
@@ -180,7 +181,7 @@ window.addEventListener("DOMContentLoaded", () => {
                         <div class="menu__item-cost">Price:</div>
                         <div class="menu__item-total"><span>${this.price}</span> $</div>
                     </div>
-                </div>
+                
             `;
             this.parent.append(element);
         }
