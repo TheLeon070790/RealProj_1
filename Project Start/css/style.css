@@ -871,3 +871,8 @@ a {
 .hide {
     display: none;
 }
+
+.black {
+    background-color: black;
+    border: 1px solid crimson;
+}
